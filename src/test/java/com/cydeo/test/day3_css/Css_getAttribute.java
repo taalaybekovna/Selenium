@@ -1,5 +1,6 @@
 package com.cydeo.test.day3_css;
 
+import com.cydeo.test.utilities.WebdriverFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,9 +14,11 @@ public class Css_getAttribute {
     2- Go to: https://login1.nextbasecrm.com/
     3- Verify “Log in” button text is as expected:
     Expected: Log In
-             */
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+                 */
+    //        WebDriverManager.chromedriver().setup();
+    //        WebDriver driver = new ChromeDriver();
+
+        WebDriver driver = WebdriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
 
         driver.get("https://login1.nextbasecrm.com/");
@@ -32,10 +35,6 @@ public class Css_getAttribute {
         }
 
         driver.close();
-
-
-
-
 
 
     }
