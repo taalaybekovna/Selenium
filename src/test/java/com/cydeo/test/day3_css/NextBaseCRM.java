@@ -1,4 +1,4 @@
-package com.cydeo.test.day2_locators;
+package com.cydeo.test.day3_css;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -40,7 +40,7 @@ public class NextBaseCRM {
             String actualText = driver.findElement(By.className("errortext")).getText();
             String expectedText = "Incorrect login or password";
 
-            if (actualText.contains(expectedText)){
+            if (actualText.equals(expectedText)){
                 System.out.println("Passed");
             } else {
                 System.out.println("Failed");
