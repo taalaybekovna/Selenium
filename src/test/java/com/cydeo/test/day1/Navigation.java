@@ -9,6 +9,7 @@ public class Navigation {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
       //  driver.get("https:mail.ru");
         driver.navigate().to("https:www.mail.ru"); //  driver.get("https:mail.ru"); these two are same
         driver.navigate().back(); // goes back
@@ -25,5 +26,7 @@ public class Navigation {
         System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
 
         driver.close(); // closes the page
+      //  driver.quit(); // closes all tabs
+
     }
 }
