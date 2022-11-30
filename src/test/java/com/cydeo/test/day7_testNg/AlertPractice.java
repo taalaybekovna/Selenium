@@ -48,6 +48,11 @@ public class AlertPractice {
         WebElement textDisplay = driver.findElement(By.id("result"));
         Assert.assertTrue(textDisplay.isDisplayed());
 
+        String actualText = textDisplay.getText();
+        String expectedText = "You successfully clicked an alert";
+
+        Assert.assertEquals(actualText, expectedText, "Text is not verified");
+
         }
 
     }
