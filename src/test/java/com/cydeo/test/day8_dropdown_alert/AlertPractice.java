@@ -1,4 +1,4 @@
-package com.cydeo.test.day7_testNg;
+package com.cydeo.test.day8_dropdown_alert;
 
 import com.cydeo.test.utilities.WebdriverFactory;
 import org.openqa.selenium.Alert;
