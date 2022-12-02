@@ -1,6 +1,7 @@
 package com.cydeo.test.day_utilities_windows;
 
 import com.cydeo.base.TestBase;
+import com.cydeo.test.utilities.CRM_utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -24,14 +25,17 @@ public class Iframe_Crm extends TestBase {
     public void appreciation(){
         driver.get("https://login2.nextbasecrm.com/");
 
-        WebElement userName = driver.findElement(By.cssSelector("input[name='USER_LOGIN']"));
-        userName.sendKeys("helpdesk1@cybertekschool.com");
+       CRM_utilities.crm_login(driver); // this is from the utilities,and it's easier to use it instead of keep typing log in and password
+       // CRM_utilities.crm_login(driver, "hr1@cydeo.com", "UserUser");
 
-        WebElement password = driver.findElement(By.cssSelector("input[name='USER_PASSWORD']"));
-        password.sendKeys("UserUser");
-
-        WebElement loginBtn = driver.findElement(By.cssSelector("input[class='login-btn']"));
-        loginBtn.click();
+//        WebElement userName = driver.findElement(By.cssSelector("input[name='USER_LOGIN']"));
+//        userName.sendKeys("helpdesk1@cybertekschool.com");
+//
+//        WebElement password = driver.findElement(By.cssSelector("input[name='USER_PASSWORD']"));
+//        password.sendKeys("UserUser");
+//
+//        WebElement loginBtn = driver.findElement(By.cssSelector("input[class='login-btn']"));
+//        loginBtn.click();
 
         WebElement moreBtn = driver.findElement(By.xpath("//span[contains(@id,'link-text')]"));
         moreBtn.click();
