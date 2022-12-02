@@ -4,6 +4,7 @@ import com.cydeo.base.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Iframe_Crm extends TestBase {
@@ -32,11 +33,21 @@ public class Iframe_Crm extends TestBase {
         WebElement loginBtn = driver.findElement(By.cssSelector("input[class='login-btn']"));
         loginBtn.click();
 
-        WebElement moreBtn = driver.findElement(By.id("span[id$='link-text']"));
+        WebElement moreBtn = driver.findElement(By.xpath("//span[contains(@id,'link-text')]"));
         moreBtn.click();
 
+        WebElement appreciationBtn = driver.findElement(By.xpath("//span[.='Appreciation']"));
+        appreciationBtn.click();
 
-      //  Select appreciation = new Select(driver.findElement(B*))
+        driver.switchTo().frame(driver.findElement(By.cssSelector(".bx-editor-iframe")));
+        driver.findElement(By.tagName("body")).sendKeys("hello");
+        driver.switchTo().parentFrame();
+
+        WebElement sendBtn = driver.findElement(By.xpath("//div[starts-with(@id,'blog_post_body')]"));
+        String actualText = sendBtn.getText();
+        String expectedText = "Hello!";
+        Assert.assertEquals(actualText,expectedText,"Feed message did not appear correctly!");
+
 
 
     }
