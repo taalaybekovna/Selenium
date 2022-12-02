@@ -3,6 +3,7 @@ package com.cydeo.test.day_utilities_windows;
 import com.cydeo.base.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class Iframe_Crm extends TestBase {
@@ -30,6 +31,14 @@ public class Iframe_Crm extends TestBase {
 
         WebElement loginBtn = driver.findElement(By.cssSelector("input[class='login-btn']"));
         loginBtn.click();
+
+        WebElement moreBtn = driver.findElement(By.id("span[id$='link-text']"));
+        moreBtn.click();
+
+
+      //  Select appreciation = new Select(driver.findElement(B*))
+
+
     }
 
 }
