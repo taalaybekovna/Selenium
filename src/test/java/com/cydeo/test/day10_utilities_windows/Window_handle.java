@@ -1,4 +1,4 @@
-package com.cydeo.test.day_utilities_windows;
+package com.cydeo.test.day10_utilities_windows;
 
 import com.cydeo.base.TestBase;
 import org.openqa.selenium.By;

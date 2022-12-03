@@ -1,10 +1,9 @@
-package com.cydeo.test.day_utilities_windows;
+package com.cydeo.test.day10_utilities_windows;
 
 import com.cydeo.base.TestBase;
 import com.cydeo.test.utilities.CRM_utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
