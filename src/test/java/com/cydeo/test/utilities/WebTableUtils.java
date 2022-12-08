@@ -28,11 +28,11 @@ public class WebTableUtils {
 
     }
 
-    public static String returnOrderDate2(WebDriver driver, String CustomerName){
-
-        return driver.findElement(By.xpath("//td[.='\"+ CustomerName +\"']/following-sibling::td[3]")).getText();
-
-    }
+//    public static String returnOrderDate2(WebDriver driver, String CustomerName){
+//
+//        return driver.findElement(By.xpath("//td[.='\"+ CustomerName +\"']/following-sibling::td[3]")).getText();
+//
+//    }
 
     /*
         Method #2 info:
