@@ -14,6 +14,7 @@ public class LearningProperties {
 
         // System.getProperty("user.name") = MSI GS76
         System.out.println("System.getProperty(\"user.name\") = " + System.getProperty("user.name"));
+        
 
     }
 }
