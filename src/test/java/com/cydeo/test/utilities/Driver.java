@@ -9,12 +9,14 @@ import java.util.concurrent.TimeUnit;
 
 public class Driver {
 
+    public static Object getDriver;
+
     // Driver constructor
     private Driver(){}
 
     private static WebDriver driver;
 
-    private static WebDriver getDriver(){
+    public static WebDriver getDriver(){
         if (driver == null){
             String browserType = ConfigurationReader.getProperty("browser");
             switch (browserType){
@@ -35,5 +37,12 @@ public class Driver {
         }
 
     return driver;
+  }
+
+  public static void closeDriver(){
+        if (driver != null){
+            driver.quit();
+            driver = null;
+        }
   }
 }
