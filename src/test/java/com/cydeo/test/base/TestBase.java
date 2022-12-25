@@ -1,4 +1,4 @@
-package com.cydeo.base;
+package com.cydeo.test.base;
 
 import com.cydeo.test.utilities.ConfigurationReader;
 import com.cydeo.test.utilities.WebdriverFactory;

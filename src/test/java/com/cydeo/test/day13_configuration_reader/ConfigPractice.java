@@ -1,7 +1,6 @@
 package com.cydeo.test.day13_configuration_reader;
 
-import com.cydeo.base.TestBase;
-import com.cydeo.test.utilities.BrowserUtils;
+import com.cydeo.test.base.TestBase;
 import com.cydeo.test.utilities.ConfigurationReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

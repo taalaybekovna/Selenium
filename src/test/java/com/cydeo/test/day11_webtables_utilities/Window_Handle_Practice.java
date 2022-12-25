@@ -1,7 +1,6 @@
 package com.cydeo.test.day11_webtables_utilities;
 
-import com.cydeo.base.TestBase;
-import com.cydeo.test.utilities.BrowserUtils;
+import com.cydeo.test.base.TestBase;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;

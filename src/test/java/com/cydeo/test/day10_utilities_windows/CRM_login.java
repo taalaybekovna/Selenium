@@ -1,6 +1,6 @@
 package com.cydeo.test.day10_utilities_windows;
 
-import com.cydeo.base.TestBase;
+import com.cydeo.test.base.TestBase;
 import com.cydeo.test.utilities.CRM_utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

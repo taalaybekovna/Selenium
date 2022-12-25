@@ -1,6 +1,6 @@
 package com.cydeo.test.day11_webtables_utilities;
 
-import com.cydeo.base.TestBase;
+import com.cydeo.test.base.TestBase;
 import com.cydeo.test.utilities.WebTableUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
