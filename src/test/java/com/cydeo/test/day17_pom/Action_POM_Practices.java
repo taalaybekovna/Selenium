@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Action_POM_Practices {
+
     @Test
     public void drag_and_drop_test(){
     // 2. Go to: https://practice.cydeo.com/drag_and_drop_circles
