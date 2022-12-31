@@ -44,21 +44,15 @@ public class BrowserUtils {
 
     }
 
-    public static void verifyTitle(WebDriver driver,String expectedTitle){
+    public static void verifyTitle(WebDriver driver, String expectedTitle) {
 
-        Assert.assertEquals(driver.getTitle(),expectedTitle);
+        Assert.assertEquals(driver.getTitle(), expectedTitle);
 
     }
 
+    public static void waitForInvisibilityOf(WebElement element) {
 
-//    public static void waitForInvisibilityOf(WebElement element){
-//
-//        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
-//        wait.until(ExpectedConditions.invisibilityOf(element));
-//
-//    }
-//
-
-
-
+        WebDriverWait wait = new WebDriverWait(com.cydeo.test.utilities.Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.invisibilityOf(element));
+    }
 }
